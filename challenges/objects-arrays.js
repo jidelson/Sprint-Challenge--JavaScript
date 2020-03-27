@@ -10,7 +10,7 @@ const dinoOne = {
   diet: "carnivorous",
   weight: "7000kg",
   length: "12m",
-  period: "Late Cretaceous";
+  period: "Late Cretaceous",
   roar: function() {
     console.log(`RAWERSRARARWERSARARARRRR!`)
   }
@@ -21,7 +21,7 @@ const dinoOne = {
   diet: "herbivorous",
   weight: "2000kg",
   length: "9m",
-  period: "Late Jurassic";
+  period: "Late Jurassic",
   };
   
   const dinoThree = {
@@ -29,7 +29,7 @@ const dinoOne = {
   diet: "carnivorous",
   weight: "15kg",
   length: "1.8m",
-  period: "Late Cretaceous";
+  period: "Late Cretaceous",
   };
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
@@ -152,7 +152,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = zooAnimals.reduce(accumulator, item){
-  return accumulator + item.population;
+    return accumulator + item.population;
 }, 0;
 console.log(populationTotal);
 

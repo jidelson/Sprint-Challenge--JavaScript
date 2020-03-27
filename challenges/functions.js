@@ -38,7 +38,7 @@ const greeting = function(firstName, lastName){
 
 // Explanation: 
 
-Because it is nested in myFunction or in other words it is in its Scope. 
+// Because it is nested in myFunction or in other words it is in its Scope. 
 
 const external = "I'm outside the function";
 
