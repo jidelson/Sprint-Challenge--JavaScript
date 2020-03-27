@@ -91,13 +91,12 @@ const contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov",
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [
-  { id: 4, first_name: "Modestine", university: "International Medical & Technological University", email: "mdolder3@symantec.com" },
-  { id: 7, first_name: "Robbi", university: "Salem University", email: "rbrister6@redcross.org" },
-  { id: 8, first_name: "Colline", university: "Coastal Carolina University", email: "cbrosh7@alibaba.com" },
-  { id: 9, first_name: "Michail", university: "Universidad Católica de Ávila", email: "mrome8@shinystat.com" },
-  { id: 10, first_name: "Hube", university: "Universitat Rovira I Virgili Tarragona", email: "hlethbrig9@foxnews.com" },
-];
+const unisWithUni = 
+for (let i = 0; i < graduates.length; i++) {
+  if (graduates[i].university.includes(`Uni`)) {
+  uni.push(graduates[i].university);
+  };
+};
 console.log(unisWithUni);
 
 
@@ -123,27 +122,7 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = [
-  "Name: Jackal, asiatic, Scientific: Canis aureus.", 
-  
-  "Name: Screamer, southern, Scientific: Chauna torquata.",
-
-  "Name: White spoonbill, Scientific: Platalea leucordia.",
-
-  "Name: White-cheeked pintail, Scientific: Anas bahamensis.",
-
-  "Name: Black-backed jackal, Scientific: Canis mesomelas.",
-
-  "Name: Brolga crane, Scientific: Grus rubicundus.",
-
-  "Name: Common melba finch, Scientific: Pytilia melba.",
-
-  "Name: Pampa gray fox, Scientific: Pseudalopex gymnocercus.",
-  
-  "Name: Hawk-eagle, crowned, Scientific: Spizaetus coronatus.",
-
-  "Name: Australian pelican, Scientific: Pelecanus conspicillatus."
-];
+const displayNames = zooAnimals.forEach(function(displayNames, scientificNames));
 console.log(displayNames);
 
 /* Request 2: .map()
