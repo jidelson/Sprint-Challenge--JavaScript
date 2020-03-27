@@ -6,6 +6,7 @@
   object name, diet, weight, length, period
 */
 
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -15,7 +16,7 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log( );
 
 // What was the diet of a velociraptor?
 console.log();
