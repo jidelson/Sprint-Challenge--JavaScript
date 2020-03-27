@@ -11,9 +11,7 @@ const dinoOne = {
   weight: "7000kg",
   length: "12m",
   period: "Late Cretaceous",
-  roar: function() {
-    console.log(`RAWERSRARARWERSARARARRRR!`)
-  }
+  roar:`RAWERSRARARWERSARARARRRR!`,
   };
   
   const dinoTwo = {
@@ -55,7 +53,7 @@ console.log(dinoOne.period);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 
-console.log(dinoOne(roar));
+console.log(dinoOne.roar);
 
 
 // ==== Arrays ====
@@ -91,10 +89,10 @@ const contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov",
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = 
+const unisWithUni = [];
 for (let i = 0; i < graduates.length; i++) {
   if (graduates[i].university.includes(`Uni`)) {
-  uni.push(graduates[i].university);
+  unisWithUni.push(graduates[i].university);
   };
 };
 console.log(unisWithUni);
@@ -122,7 +120,10 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = zooAnimals.forEach(function(displayNames, scientificNames));
+const displayNames = [];
+zooAnimals.forEach((animal) => {
+  displayNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}.`)
+});
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -151,9 +152,9 @@ console.log(lowPopulationAnimals);
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = zooAnimals.reduce(accumulator, item){
+const populationTotal = zooAnimals.reduce((accumulator, item) => {
     return accumulator + item.population;
-}, 0;
+}, 0);
 console.log(populationTotal);
 
 
